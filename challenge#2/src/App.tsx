@@ -4,7 +4,7 @@ import React, {
 	useCallback,
 	useState
 } from "react"
-import SearchForm from "./components/SearchForm/Index"
+import SearchForm from "./components/SearchForm"
 import SearchResults from "./components/SearchResults"
 import "./styles/App.css"
 
