@@ -19,6 +19,7 @@
 	"homepage": "https://github.com/DeadRoxx/desafiofullstack#readme",
 	"dependencies": {
 		"apollo-server": "^2.21.1",
+		"axios": "^0.21.1",
 		"consola": "^2.15.3",
 		"graphql": "^15.5.0"
 	},
