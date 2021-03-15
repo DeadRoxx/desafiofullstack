@@ -1,0 +1,31 @@
+{
+	"name": "desafiofullstack",
+	"version": "1.0.0",
+	"description": "Se você recebeu esse link, provavelmente você se candidatou para a vaga de Fullstack do time de produto da mobLee. Então, primeiramente, parabéns por ter sido selecionado =)",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DeadRoxx/desafiofullstack.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/DeadRoxx/desafiofullstack/issues"
+	},
+	"homepage": "https://github.com/DeadRoxx/desafiofullstack#readme",
+	"dependencies": {
+		"apollo-server": "^2.21.1",
+		"consola": "^2.15.3",
+		"graphql": "^15.5.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.22.0",
+		"eslint-config-prettier": "^8.1.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"prettier": "^2.2.1"
+	}
+}
