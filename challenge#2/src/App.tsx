@@ -1,53 +1,10 @@
-import React, {
-	ChangeEventHandler,
-	EventHandler,
-	useCallback,
-	useState
-} from "react"
+import React, {useCallback, useState} from "react"
 import SearchForm from "./components/SearchForm"
 import SearchResults from "./components/SearchResults"
 import "./styles/App.css"
+import Logo from "./components/Logo"
+import useSearch from "./hooks/useSearch"
 
-const Logo: React.FC = () => (
-	<div className="stackoverflow-logo">
-		<h1>StackOverflow</h1>
-	</div>
-)
-
-const useSearch = () => {
-	const [tag, setTag] = useState<string>("")
-	const [limit, setLimit] = useState<number>(0)
-	const [order, setOrder] = useState<string>("desc")
-	const [sort, setSort] = useState<string>("activity")
-
-	const [founded, setFounded] = useState<FoundedPost[]>([
-		{
-			title: "default post title",
-			link: "http://stackoverflow.com.br"
-		}
-	])
-
-	const onSearch = useCallback(() => {
-		console.log("searching")
-	}, [])
-
-	return {
-		tag,
-		setTag,
-		limit,
-		setLimit,
-		sort,
-		setSort,
-		order,
-		setOrder,
-		founded,
-		onSearch
-	}
-}
-
-const Container: React.FC = ({children}) => {
-	return <div className={"container"}>{children}</div>
-}
 const App: React.FC = () => {
 	const {
 		tag,
@@ -63,7 +20,7 @@ const App: React.FC = () => {
 	} = useSearch()
 
 	return (
-		<Container>
+		<>
 			<Logo />
 			<SearchForm
 				tag={tag}
@@ -76,7 +33,7 @@ const App: React.FC = () => {
 				setSort={setSort}
 			/>
 			<SearchResults results={founded} />
-		</Container>
+		</>
 	)
 }
 

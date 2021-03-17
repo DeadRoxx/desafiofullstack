@@ -1,12 +1,7 @@
-.container {
-	width: "100%";
-	margin: "8px";
-	display: "flex";
-	flex-direction: "column";
-}
-
 .stackoverflow-logo {
-	width: "100%";
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .search {
